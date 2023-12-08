@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<button id="Action1">Get Data1</button>
+<button id="Action2">Get Data2</button>
+<button id="Action3">Get Data3</button>
+<button id="Action4">Get Data4</button>
+<button id="Action5">Get Data5</button>
+<button id="Action6">Get Data6</button>
+<button id="Action7">Get Data7</button>
+<button id="Action8">Get Data8</button>
+<button id="Action9">Get Data9</button>
+
+
+<script>
+    document.getElementById('Action1').addEventListener('click', function () {
+
+        var id = 12;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction1", "Action1")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action2').addEventListener('click', function () {
+
+        var id = 2;
+
+        fetch('@Url.Action("TakeAction2", "Action2")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action3').addEventListener('click', function () {
+
+        var id = 12;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction3", "Action3")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action4').addEventListener('click', function () {
+
+        var id = 12;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction4", "Action4")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action5').addEventListener('click', function () {
+
+        var id = 2;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction5", "Action5")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action6').addEventListener('click', function () {
+
+        var id = 2;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction6", "Action6")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action7').addEventListener('click', function () {
+
+        var id = 12;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction7", "Action7")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action8').addEventListener('click', function () {
+
+        var id = 12;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction8", "Action8")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    document.getElementById('Action9').addEventListener('click', function () {
+
+        var id = 12;
+        var name = 'example';
+
+        fetch('@Url.Action("TakeAction9", "Action9")?id=' + id + '&name='  + name, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+</script>
